@@ -19,7 +19,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
 		<!-- Web Fonts  -->
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css"> -->
 
 		<!-- Vendor CSS -->
 		<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}">
@@ -101,7 +101,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="100" height="60" data-sticky-width="80" data-sticky-height="60" src="{{ asset('img/logo.png')}}">
+											<img alt="Porto" width="100" height="70" data-sticky-width="80" data-sticky-height="60" src="{{ asset('img/logo.png')}}">
 										</a>
 									</div>
 								</div>
@@ -148,8 +148,26 @@
 														</a>
 													</li>
 
+
 													<!-- language Switcher -->
-													<li class="nav-item dropdown" >
+													<li class="dropdown">
+														<a class="dropdown-item dropdown-toggle" href="">
+															<img class="flag flag-us" src="{{ asset('img/blank.gif') }}" alt=""><span style="padding-left: 5px;" > {{ Config::get('languages')[App::getLocale()]['display'] }} </span>
+														</a>
+														<ul class="dropdown-menu">
+															<li>
+																@foreach ( Config::get('languages') as $lang => $language)
+																	@if($lang != App::getLocale())
+																		<a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> <img class="flag flag-jp" src="{{ asset('img/blank.gif') }}" alt=""> <span style="padding-left: 5px;" >{{ $language['display'] }} </span> </a>
+																	@endif
+																@endforeach
+															</li>
+														</ul>
+													</li>
+
+													
+													<!-- language Switcher -->
+													<!-- <li class="nav-item dropdown" >
 														<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="fasle"> 
 														<img class="flag flag-us" src="{{ asset('img/blank.gif') }}" alt=""><span style="padding-left: 5px;" > {{ Config::get('languages')[App::getLocale()]['display'] }} </span>
 														</a>
@@ -161,7 +179,7 @@
 															@endforeach
 														</div>		
 														
-													</li>		
+													</li>		 -->
 												</ul>
 											</nav>
 										</div>
@@ -244,19 +262,25 @@
 		<script src="{{ asset('vendor/vivus/vivus.min.js') }}"></script>  
         <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
 		
-		
-		<!-- Theme Base, Components and Settings -->
-		<script src="{{ asset('js/theme.js') }}"></script>
-		
+
 		<!-- Current Page Vendor and Views -->
 		<script src="{{ asset('vendor/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
 		<script src="{{ asset('vendor/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
+		
+
+		<!-- Theme Base, Components and Settings -->
+		<script src="{{ asset('js/theme.js') }}"></script>
 		
 		 <!-- Theme Custom -->
          <script src="{{ asset('js/custom.js') }}"></script>
 
 		<!-- Theme Initialization Files -->
 		<script src="{{ asset('js/theme.init.js') }}"></script>
+
+
+
+		<!-- Examples -->
+		<script src="{{ asset('js/examples/examples.carousels.js') }}"></script>	
 
 		<!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
 		<script>
