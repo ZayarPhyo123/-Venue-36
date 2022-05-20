@@ -22,13 +22,17 @@
 		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css"> -->
 
 		<!-- Vendor CSS -->
-		<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+		<!-- <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}"> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 		<link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}">
 		<link rel="stylesheet" href="{{ asset('vendor/animate/animate.min.css')}}">
+
+		<!-- throphy br nyr icon -->
 		<link rel="stylesheet" href="{{ asset('vendor/simple-line-icons/css/simple-line-icons.min.css')}}">		
+
         <link rel="stylesheet" href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
-		<link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.min.css') }}">
+		<!-- <link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.min.css') }}"> -->
 
 
 		<!-- Theme CSS -->
@@ -253,50 +257,27 @@
 		<!-- image pop-up -->
 		<script>
 
-		function myFunction(id) 
-		{
-			var modal = document.getElementById('myModal');
-
-			// Get the image and insert it inside the modal - use its "alt" text as a caption
-
-			var img = document.getElementById(id);
-			var modalImg = document.getElementById("img01");
-			// var captionText = document.getElementById("caption");
-			modal.style.display = "block";
-			modalImg.src = img.src;
-			// captionText.innerHTML = this.alt;
-			
-			
-			// Get the <span> element that closes the modal
-			var span = document.getElementsByClassName("close")[0];
-			var zz = document.getElementsByClassName("modal")[0];
-
-			// When the user clicks on <span> (x), close the modal
-			span.onclick = function() { 
-			modal.style.display = "none";
-			}
-			zz.onclick = function() { 
-			modal.style.display = "none";
-			}
-		}
+		
 		</script>
 		<!-- Vendor -->
+		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+   		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
 		<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 		<script src="{{ asset('vendor/jquery.appear/jquery.appear.min.js') }}"></script>
 		<script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script>
-		<script src="{{ asset('vendor/jquery.cookie/jquery.cookie.min.js') }}"></script>  
+		<!-- <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.min.js') }}"></script>   -->
 		<script src="{{ asset('vendor/popper/umd/popper.min.js') }}"></script>
-		<script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
-		<script src="{{ asset('vendor/common/common.min.js') }}"></script>
-		<script src="{{ asset('vendor/jquery.validation/jquery.validate.min.js') }}"></script>
-        <script src="{{ asset('vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js') }}"></script>
-        <script src="{{ asset('vendor/jquery.gmap/jquery.gmap.min.js') }}"></script>
+		<!-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script> -->
+		<!-- <script src="{{ asset('vendor/common/common.min.js') }}"></script> -->
+		<!-- <script src="{{ asset('vendor/jquery.validation/jquery.validate.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js') }}"></script> -->
+        <!-- <script src="{{ asset('vendor/jquery.gmap/jquery.gmap.min.js') }}"></script> -->
         <script src="{{ asset('vendor/jquery.lazyload/jquery.lazyload.min.js') }}"></script>
 		<script src="{{ asset('vendor/isotope/jquery.isotope.min.js') }}"></script>
 		<script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
-        <script src="{{ asset('vendor/vide/jquery.vide.min.js') }}"></script>
-		<script src="{{ asset('vendor/vivus/vivus.min.js') }}"></script>  
-        <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+        <!-- <script src="{{ asset('vendor/vide/jquery.vide.min.js') }}"></script> -->
+		<!-- <script src="{{ asset('vendor/vivus/vivus.min.js') }}"></script>   -->
+        <!-- <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script> -->
 		
 
 		<!-- Current Page Vendor and Views -->
