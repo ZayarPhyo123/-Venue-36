@@ -55,10 +55,15 @@
 		<script src="{{ asset('vendor/modernizr/modernizr.min.js') }}"></script>
 
 	</head>
+
+	
+	
 	<body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
 
-		<div class="body">
 
+				
+
+		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': true, 'stickyChangeLogo': true, 'stickyStartAt': 30, 'stickyHeaderContainerHeight': 70}">
 				<div class="header-body border-color-primary border-bottom-0">
 					<div class="header-top header-top-simple-border-bottom">
@@ -114,7 +119,7 @@
 												<ul class="nav nav-pills" id="mainNav">
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="/">
-															Home
+														{{__ ('messages.home')}}
 														</a>
 														
 													</li>
@@ -138,13 +143,13 @@
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
-															Portfolio
+														{{__ ('messages.contact')}}
 														</a>
 														
 													</li>
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="/memory">
-															Blog
+														{{__ ('messages.blog')}}
 														</a>
 													</li>
 
@@ -244,6 +249,37 @@
 			</footer>
 		</div>
 
+
+		<!-- image pop-up -->
+		<script>
+
+		function myFunction(id) 
+		{
+			var modal = document.getElementById('myModal');
+
+			// Get the image and insert it inside the modal - use its "alt" text as a caption
+
+			var img = document.getElementById(id);
+			var modalImg = document.getElementById("img01");
+			// var captionText = document.getElementById("caption");
+			modal.style.display = "block";
+			modalImg.src = img.src;
+			// captionText.innerHTML = this.alt;
+			
+			
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+			var zz = document.getElementsByClassName("modal")[0];
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() { 
+			modal.style.display = "none";
+			}
+			zz.onclick = function() { 
+			modal.style.display = "none";
+			}
+		}
+		</script>
 		<!-- Vendor -->
 		<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 		<script src="{{ asset('vendor/jquery.appear/jquery.appear.min.js') }}"></script>

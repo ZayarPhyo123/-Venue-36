@@ -1,4 +1,7 @@
 <?php
 return [
-    'welcome' => 'Min Galar par'
+    'welcome' => 'Min Galar par',
+    'home'   => 'Home',
+    'contact' => 'Contact',
+    'blog' => 'Blog',
 ];
