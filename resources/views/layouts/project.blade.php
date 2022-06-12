@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
 
-		<title>Japanese Test Site</title>	
+		<title>Mplus_Myanmar</title>	
 
-		<meta name="keywords" content="HTML5 Template" />
+		<meta name="keywords" content="" />
 		<meta name="description" content="Your site">
 		<meta name="author" content="okler.net">
 
@@ -22,8 +22,8 @@
 		<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light%7CPlayfair+Display:400" rel="stylesheet" type="text/css"> -->
 
 		<!-- Vendor CSS -->
-		<!-- <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}"> -->
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+		<link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css')}}">
+		<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous"> -->
 		<link rel="stylesheet" href="{{ asset('vendor/fontawesome-free/css/all.min.css')}}">
 		<link rel="stylesheet" href="{{ asset('vendor/animate/animate.min.css')}}">
 
@@ -32,7 +32,7 @@
 
         <link rel="stylesheet" href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}">
 		<link rel="stylesheet" href="{{ asset('vendor/owl.carousel/assets/owl.theme.default.min.css')}}">
-		<!-- <link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.min.css') }}"> -->
+		<link rel="stylesheet" href="{{ asset('vendor/magnific-popup/magnific-popup.min.css') }}">
 
 
 		<!-- Theme CSS -->
@@ -110,7 +110,7 @@
 								<div class="header-row">
 									<div class="header-logo">
 										<a href="index.html">
-											<img alt="Porto" width="100" height="70" data-sticky-width="80" data-sticky-height="60" src="{{ asset('img/logo.png')}}">
+											<img alt="Mplus" width="180" height="70" data-sticky-width="140" data-sticky-height="60" src="{{ asset('img/logo.png')}}">
 										</a>
 									</div>
 								</div>
@@ -128,7 +128,7 @@
 														
 													</li>
 													<li class="dropdown dropdown-mega">
-														<a class="dropdown-item dropdown-toggle" href="elements.html">
+														<a class="dropdown-item dropdown-toggle" href="/element">
 															Elements
 														</a>
 														
@@ -140,13 +140,13 @@
 														
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
-															Pages
+														<a class="dropdown-item dropdown-toggle" href="/about">
+														{{__ ('messages.about')}}
 														</a>
 								
 													</li>
 													<li class="dropdown">
-														<a class="dropdown-item dropdown-toggle" href="#">
+														<a class="dropdown-item dropdown-toggle" href="/contact">
 														{{__ ('messages.contact')}}
 														</a>
 														
@@ -161,34 +161,19 @@
 													<!-- language Switcher -->
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="">
-															<img class="flag flag-us" src="{{ asset('img/blank.gif') }}" alt=""><span style="padding-left: 5px;" > {{ Config::get('languages')[App::getLocale()]['display'] }} </span>
+															<img class="flag flag-us" alt=""><span style="padding-left: 5px;" > {{ Config::get('languages')[App::getLocale()]['display'] }} </span>
 														</a>
 														<ul class="dropdown-menu">
 															<li>
 																@foreach ( Config::get('languages') as $lang => $language)
 																	@if($lang != App::getLocale())
-																		<a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> <img class="flag flag-jp" src="{{ asset('img/blank.gif') }}" alt=""> <span style="padding-left: 5px;" >{{ $language['display'] }} </span> </a>
+																		<a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> <img class="flag flag-jp" alt=""> <span style="padding-left: 5px;" >{{ $language['display'] }} </span> </a>
 																	@endif
 																@endforeach
 															</li>
 														</ul>
 													</li>
 
-													
-													<!-- language Switcher -->
-													<!-- <li class="nav-item dropdown" >
-														<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="fasle"> 
-														<img class="flag flag-us" src="{{ asset('img/blank.gif') }}" alt=""><span style="padding-left: 5px;" > {{ Config::get('languages')[App::getLocale()]['display'] }} </span>
-														</a>
-														<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-															@foreach ( Config::get('languages') as $lang => $language)
-																@if($lang != App::getLocale())
-																<a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> <img class="flag flag-jp" src="{{ asset('img/blank.gif') }}" alt=""> <span style="padding-left: 5px;" >{{ $language['display'] }} </span> </a>
-																@endif
-															@endforeach
-														</div>		
-														
-													</li>		 -->
 												</ul>
 											</nav>
 										</div>
@@ -214,28 +199,89 @@
 					</div>
 					<div class="row py-5 my-4">
 						<div class="col-md-6 mb-4 mb-lg-0">
-							<a href="index.html" class="logo pr-0 pr-lg-3">
-								<img alt="Porto Website Template" src="{{ asset('img/logo-footer.png')}}" class="opacity-7 bottom-4" height="33">
+							<a href="" class="logo pr-0 pr-lg-3">
+								<img alt="Porto Website Template" src="{{ asset('img/logo-footer.png')}}" class="bottom-4 mx-auto" width="40" height="40">
 							</a>
-							<p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper...</p>
-							<p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p>
+							<!-- <p class="mt-2 mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar magna. Phasellus semper scelerisque purus, et semper nisl lacinia sit amet. Praesent venenatis turpis vitae purus semper...</p>
+							<p class="mb-0"><a href="#" class="btn-flat btn-xs text-color-light"><strong class="text-2">VIEW MORE</strong><i class="fas fa-angle-right p-relative top-1 pl-2"></i></a></p> -->
+
+							<!-- contact form -->
+							<div class="overflow-hidden mb-1">
+								<h2 class="text-5 mb-0">Contact Us</h2>
+							</div>
+							<div class="overflow-hidden mb-4 pb-3">
+								<p class="mb-0">Feel free to ask for details, don't save any questions!</p>
+							</div>
+
+							<form id="contactForm" class="contact-form" action="php/contact-form.php" method="POST">
+								<div class="contact-form-success alert alert-success d-none mt-4" id="contactSuccess">
+									<strong>Success!</strong> Your message has been sent to us.
+								</div>
+							
+								<div class="contact-form-error alert alert-danger d-none mt-4" id="contactError">
+									<strong>Error!</strong> There was an error sending your message.
+									<span class="mail-error-message text-1 d-block" id="mailErrorMessage"></span>
+								</div>
+								
+								<div class="form-row">
+									<div class="form-group col-lg-6">
+										<label class="required font-weight-bold text-2">Full Name</label>
+										<input type="text" value="" data-msg-required="Please enter your name." maxlength="100" class="form-control" name="name" id="name" required>
+									</div>
+									<div class="form-group col-lg-6">
+										<label class="required font-weight-bold text-2">Email Address</label>
+										<input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" id="email" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="font-weight-bold text-2">Subject</label>
+										<input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" id="subject" required>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<label class="required font-weight-bold text-2">Message</label>
+										<textarea maxlength="5000" data-msg-required="Please enter your message." rows="8" class="form-control" name="message" id="message" required></textarea>
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col">
+										<input type="submit" value="Send Message" class="btn btn-primary btn-modern" data-loading-text="Loading...">
+									</div>
+								</div>
+							</form>
 						</div>
+
+						
 						<div class="col-md-6">
-							<h5 class="text-3 mb-3">CONTACT US</h5>
+							<h5 class="text-3 mb-3 text-5">M PLUS MYANMAR</h5>
 							<div class="row">
-								<div class="col-md-6">
+								<div class="col-md-12">
 									<ul class="list list-icons list-icons-lg">
-										<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">234 Street Name, City Name</p></li>
+										<li class="mb-1"><i class="far fa-dot-circle text-color-primary"></i><p class="m-0">No. 38 Alanpya Pagoda Road, Mingalar Taung Nyunt Township, Yangon</p></li>
 										<li class="mb-1"><i class="fab fa-whatsapp text-color-primary"></i><p class="m-0"><a href="tel:8001234567">(800) 123-4567</a></p></li>
 										<li class="mb-1"><i class="far fa-envelope text-color-primary"></i><p class="m-0"><a href="mailto:mail@example.com">mail@example.com</a></p></li>
 									</ul>
 								</div>
-								<div class="col-md-6">
-									<ul class="list list-icons list-icons-sm">
+								<div class="col-md-12">
+									<!-- <ul class="list list-icons list-icons-sm">
 										<li><i class="fas fa-angle-right"></i><a href="page-faq.html" class="link-hover-style-1 ml-1"> FAQ's</a></li>
 										<li><i class="fas fa-angle-right"></i><a href="sitemap.html" class="link-hover-style-1 ml-1"> Sitemap</a></li>
 										<li><i class="fas fa-angle-right"></i><a href="contact-us.html" class="link-hover-style-1 ml-1"> Contact Us</a></li>
-									</ul>
+									</ul> -->
+									<!-- <ul class="header-social-icons social-icons d-none d-sm-block">
+											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+										</ul> -->
+										<ul class="header-social-icons social-icons">
+											<li class="social-icons-facebook"><a href="http://www.facebook.com/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+											<li class="social-icons-twitter"><a href="http://www.twitter.com/" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+											<li class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="fab fa-linkedin-in"></i></a></li>
+											<br>
+											<li style="margin-top: 5px;" class="social-icons-linkedin"><a href="http://www.linkedin.com/" target="_blank" title="Linkedin"><i class="icon-social-skype icon"></i></a></li>
+										</ul>
 								</div>
 							</div>
 						</div>
@@ -261,23 +307,23 @@
 		</script>
 		<!-- Vendor -->
 		<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
-   		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+   		<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
 		<script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
 		<script src="{{ asset('vendor/jquery.appear/jquery.appear.min.js') }}"></script>
 		<script src="{{ asset('vendor/jquery.easing/jquery.easing.min.js') }}"></script>
-		<!-- <script src="{{ asset('vendor/jquery.cookie/jquery.cookie.min.js') }}"></script>   -->
+		<script src="{{ asset('vendor/jquery.cookie/jquery.cookie.min.js') }}"></script>  
 		<script src="{{ asset('vendor/popper/umd/popper.min.js') }}"></script>
-		<!-- <script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script> -->
-		<!-- <script src="{{ asset('vendor/common/common.min.js') }}"></script> -->
-		<!-- <script src="{{ asset('vendor/jquery.validation/jquery.validate.min.js') }}"></script> -->
+		<script src="{{ asset('vendor/bootstrap/js/bootstrap.min.js') }}"></script>
+		<script src="{{ asset('vendor/common/common.min.js') }}"></script>
+		<script src="{{ asset('vendor/jquery.validation/jquery.validate.min.js') }}"></script>
         <!-- <script src="{{ asset('vendor/jquery.easy-pie-chart/jquery.easypiechart.min.js') }}"></script> -->
-        <!-- <script src="{{ asset('vendor/jquery.gmap/jquery.gmap.min.js') }}"></script> -->
+        <script src="{{ asset('vendor/jquery.gmap/jquery.gmap.min.js') }}"></script>
         <script src="{{ asset('vendor/jquery.lazyload/jquery.lazyload.min.js') }}"></script>
 		<script src="{{ asset('vendor/isotope/jquery.isotope.min.js') }}"></script>
 		<script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js')}}"></script>
-        <!-- <script src="{{ asset('vendor/vide/jquery.vide.min.js') }}"></script> -->
-		<!-- <script src="{{ asset('vendor/vivus/vivus.min.js') }}"></script>   -->
-        <!-- <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script> -->
+        <script src="{{ asset('vendor/vide/jquery.vide.min.js') }}"></script>
+		<script src="{{ asset('vendor/vivus/vivus.min.js') }}"></script>  
+        <script src="{{ asset('vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
 		
 
 		<!-- Current Page Vendor and Views -->

@@ -7,7 +7,115 @@
 		display: none !important;
 	}
 	</style>
+
 		<div role="main" class="main">
+		
+		<div class="slider-container rev_slider_wrapper" style="height: 600px;">
+					<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': 1170, 'gridheight': 600, 'disableProgressBar': 'on', 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'scroll', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }, 'navigation' : {'arrows': { 'enable': false }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 70, 'h_offset': 0}}}">
+						<ul>
+							<li class=" slide-overlay-primary" data-transition="fade">
+								<img src="img/content/header/1h.png"  
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									class="">
+
+								<div class="tp-caption"
+									data-x="center" data-hoffset="['-150','-150','-150','-240']"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="1000"
+									data-transform_in="x:[-300%];opacity:0;s:500;"
+									data-transform_idle="opacity:0.2;s:500;"><img src="img/content/header/slide-title-border.png" alt=""></div>
+
+								<div class="tp-caption text-color-light font-weight-normal"
+									data-x="center"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="700"
+									data-fontsize="['22','22','22','40']"
+									data-lineheight="['25','25','25','45']"
+									data-transform_in="y:[-50%];opacity:0;s:500;">DO YOU NEED A NEW</div>
+
+								<div class="tp-caption d-none d-md-block"
+									data-frames='[{"delay":2200,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center" data-hoffset="['80','80','80','135']"
+									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="img/content/header/slide-white-line.png" alt=""></div>
+
+								<div class="tp-caption"
+									data-x="center" data-hoffset="['150','150','150','240']"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="1000"
+									data-transform_in="x:[300%];opacity:0;s:500;"
+									data-transform_idle="opacity:0.2;s:500;"><img src="img/content/header/slide-title-border.png" alt=""></div>
+
+								<h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
+									data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center"
+									data-y="center"
+									data-fontsize="['50','50','50','90']"
+									data-lineheight="['55','55','55','95']">WEB DESIGN?</h1>
+
+								<div class="tp-caption text-light font-weight-light"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="center"
+									data-y="center" data-voffset="['40','40','40','80']"
+									data-fontsize="['18','18','18','50']"
+									data-lineheight="['20','20','20','55']">Check out our options and features</div>
+								
+							</li>
+							<li class=" slide-overlay-primary" data-transition="fade">
+								<img src="img/content/header/21h.png"
+									alt=""
+									data-bgposition="center center" 
+									data-bgfit="cover" 
+									data-bgrepeat="no-repeat" 
+									class="">
+
+									<div class="tp-caption"
+									data-x="center" data-hoffset="['-150','-150','-150','-240']"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="1000"
+									data-transform_in="x:[-300%];opacity:0;s:500;"
+									data-transform_idle="opacity:0.2;s:500;"><img src=img/content/header/slide-title-border.png" alt=""></div>
+
+								<div class="tp-caption text-color-light font-weight-normal"
+									data-x="center"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="700"
+									data-fontsize="['22','22','22','40']"
+									data-lineheight="['25','25','25','45']"
+									data-transform_in="y:[-50%];opacity:0;s:500;">DO YOU NEED A NEW</div>
+
+								<div class="tp-caption d-none d-md-block"
+									data-frames='[{"delay":2200,"speed":500,"frame":"0","from":"opacity:0;x:10%;","to":"opacity:1;x:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center" data-hoffset="['80','80','80','135']"
+									data-y="center" data-voffset="['-33','-33','-33','-55']"><img src="img/content/header/slide-white-line.png" alt=""></div>
+
+								<div class="tp-caption"
+									data-x="center" data-hoffset="['150','150','150','240']"
+									data-y="center" data-voffset="['-50','-50','-50','-75']"
+									data-start="1000"
+									data-transform_in="x:[300%];opacity:0;s:500;"
+									data-transform_idle="opacity:0.2;s:500;"><img src="img/content/header/slide-title-border.png" alt=""></div>
+
+								<h1 class="tp-caption font-weight-extra-bold text-color-light negative-ls-2"
+									data-frames='[{"delay":1000,"speed":2000,"frame":"0","from":"sX:1.5;opacity:0;fb:20px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
+									data-x="center"
+									data-y="center"
+									data-fontsize="['50','50','50','90']"
+									data-lineheight="['55','55','55','95']">WEB DESIGN?</h1>
+
+								<div class="tp-caption text-light font-weight-light"
+									data-frames='[{"from":"opacity:0;","speed":300,"to":"o:1;","delay":2000,"split":"chars","splitdelay":0.05,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
+									data-x="center"
+									data-y="center" data-voffset="['40','40','40','80']"
+									data-fontsize="['18','18','18','50']"
+									data-lineheight="['20','20','20','55']">Check out our options and features</div>
+								
+							</li>
+						</ul>
+					</div>
+				</div>
 			
 			<!-- carousel br nyr -->
 
@@ -25,39 +133,63 @@
 				</div>
 			</div> -->
 
-			<div class="owl-carousel owl-theme"  style="max-height 799px;" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut','autoplay': true,'autoplayTimeout': 4000,'data-touch' : false }">
+			<!-- next carousel -->
+			<!-- <div class="owl-carousel owl-theme" data-plugin-options="{'items': 1, 'margin': 10, 'animateOut': 'fadeOut','autoplay': true,'autoplayTimeout': 4000,'data-touch' : false }">
 				<div>
-					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/1.jpg">
-				</div>
-				<!-- <div>
-					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/2.jpg">
-				</div> -->
-				<div>
-					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/3.jpg">
+					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/header/1h.jpg">
 				</div>
 				<div>
-					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/4.jpg">
+					<img alt="" style="object-fit: fit;" class="img-fluid rounded" src="img/content/header/21h.jpg">
 				</div>
-			</div>
-			
-			<div class="home-intro light border border-bottom-0 mb-0">								
-				<div class="container">
-					<div class="align-items-center text-center">
-						<div class="">
-							<p class="font-weight-bold text-color-dark">
-								The fastest way to grow your business with the leader in <span class="highlighted-word highlighted-word-animation-1 text-color-primary font-weight-semibold text-5">Technology</span>
-								<span>Check out our options and features included.</span>
-							</p>
-						</div>
-						<br>
-						<div class="">
-							<div class="get-started ">
-								<a href="#" class="btn btn-primary btn-lg text-3 font-weight-semibold btn-py-2 px-4">Get Started Now</a>
-								<div class="learn-more">or <a href="index.html" class="font-weight-bold">learn more.</a></div>
+				<div>
+					<img alt="" style="object-fit: fit;max-height 799px;" class="img-fluid rounded" src="img/content/header/34h.jpg">
+				</div>
+			</div> -->
+
+			<div class="home-intro" id="home-intro">
+					<div class="container">
+
+						<div class="row align-items-center">
+							<div class="col-lg-8">
+								<p>
+									The fastest way to grow your business with the leader in <span class="highlighted-word text-color-primary font-weight-semibold text-5">Technology</span>
+									<span>Check out our options and features included.</span>
+								</p>
+							</div>
+							<div class="col-lg-4">
+								<div class="get-started text-left text-lg-right">
+									<a href="#" class="btn btn-primary btn-lg text-3 font-weight-semibold px-4 py-3">Get Started Now!</a>
+									<div class="learn-more">or <a href="index.html">learn more.</a></div>
+								</div>
 							</div>
 						</div>
+
 					</div>
-			
+				</div>
+
+			<!-- testimonials -->
+			<div class="owl-carousel owl-theme container" data-plugin-options="{'items': 1, 'autoplay': true, 'autoplayTimeout': 3000}">
+				
+				<div class="testimonial testimonial-style-5">
+					<blockquote>
+						<p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes"</p>
+					</blockquote>
+					<div class="testimonial-arrow-down"></div>
+					<div class="testimonial-author">
+						<img src="img/clients/6.jpg" class="img-fluid rounded-circle" alt="">
+						<p><strong class="font-weight-extra-bold pt-2">BO BO PE WIN</strong><span>Director</span></p>
+					</div>
+				</div>
+					
+				<div class="testimonial testimonial-style-5">
+					<blockquote>
+						<p class="mb-0">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget risus porta, tincidunt turpis at, interdum tortor. Suspendisse potenti. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sociis natoque penatibus et magnis dis parturient montes"</p>
+					</blockquote>
+						<div class="testimonial-arrow-down"></div>
+						<div class="testimonial-author">
+							<img src="img/clients/11.jpg" class="img-fluid rounded-circle" alt="">
+							<p><strong class="font-weight-extra-bold">NAY LIN HTAT (LOUIS)</strong><span>Managing Director</span></p>
+						</div>
 				</div>
 			</div>
 			
@@ -156,6 +288,8 @@
 			</section>
 				
 
+
+
 			<!-- parallex and dark text -->
 			<section class="parallax section section-parallax section-center" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="">
 				<div class="container">
@@ -164,9 +298,9 @@
 						</div>
 					<div class="row justify-content-center">
 						<div class="col-lg-8">
-							<h4 class="mb-0 text-dark">Parallax Section</h4>
+							<h4 class="mb-0 text-dark">M PLUS MYANMAR</h4>
 							<h5 class="text-dark">(Dark Text)</h5>
-							<p class="mb-0">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. <br>Nulla consequat massa quis enim.Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium.Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.Aenean vulputate eleifend tellus.</p>
+							<p class="mb-0">Our group was founded in 2018 by U NAY LIN HTAT (LOUIS), and in addition to school management (language school / IT vocational school), agriculture, livestock, fishery processing, logistics, personnel dispatch, energy import / export, automobile import It is the core company of the Venue 36 Group, which sells and manages restaurants.</p>
 						</div>
 					</div>
 				</div>
@@ -174,27 +308,37 @@
 
 			<div class="container">
 				<div class="heading heading-border heading-middle-border heading-middle-border-center">
-					<h2 class="font-weight-normal">Heading <strong class="font-weight-extra-bold">H2</strong></h2>
+					<h2 class="font-weight-normal">Our Group</h2>
 				</div>
 			</div>
 
 			<!-- Carousel image add -->
 			<div class="owl-carousel owl-theme full-width" data-plugin-options="{'items': 5, 'loop': false, 'nav': true, 'dots': false}">
 				<div>
-					<a href="portfolio-single-wide-slider.html">
+					<!-- <a href="portfolio-single-wide-slider.html"> -->
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project.jpg" class="img-fluid" alt="">
+								<img src="img/group/MCreation.png" class="img-fluid" style="margin: -6px;" alt="">
 														
 							</span>
 						</span>
-					</a>
+					<!-- </a> -->
+				</div>
+				<div>
+					<!-- <a href="portfolio-single-wide-slider.html"> -->
+						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
+							<span class="">
+								<img src="img/group/zeetrading.png" class="img-fluid" style="margin: -2px;" alt="">
+								
+							</span>
+						</span>
+					<!-- </a> -->
 				</div>
 				<div>
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project-2.jpg" class="img-fluid" alt="">
+								<img src="img/group/seacross.png" class="img-fluid" style="margin: -2px;" alt="">
 								
 							</span>
 						</span>
@@ -204,7 +348,7 @@
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project-4.jpg" class="img-fluid" alt="">
+								<img src="img/group/Venue36.png" class="img-fluid" style="margin: -2px;" alt="">
 								
 							</span>
 						</span>
@@ -214,7 +358,7 @@
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project-5.jpg" class="img-fluid" alt="">
+								<img src="img/group/seabrother.png" class="img-fluid" style="margin: -2px;" alt="">
 								
 							</span>
 						</span>
@@ -224,7 +368,7 @@
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project-6.jpg" class="img-fluid" alt="">
+								<img src="img/group/UniFarm.png" class="img-fluid" style="margin-top: 30px;" alt="">
 								
 							</span>
 						</span>
@@ -234,7 +378,7 @@
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project.jpg" class="img-fluid" alt="">
+								<img src="img/group/myanFarm.png" class="img-fluid" style="margin-top: 30px;" alt="">
 								
 							</span>
 						</span>
@@ -244,13 +388,20 @@
 					<a href="portfolio-single-wide-slider.html">
 						<span class="thumb-info thumb-info-centered-info thumb-info-no-borders">
 							<span class="">
-								<img src="img/projects/project-4.jpg" class="img-fluid" alt="">
+								<img src="img/group/MST.png" class="img-fluid" style="margin: -2px;" alt="">
 								
 							</span>
 						</span>
 					</a>
 				</div>
 			</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<h4 class="mb-0 text-dark">M PLUS MYANMAR</h4>
+							<h5 class="text-dark">(Dark Text)</h5>
+							<p class="mb-0">Our group was founded in 2018 by U NAY LIN HTAT (LOUIS), and in addition to school management (language school / IT vocational school), agriculture, livestock, fishery processing, logistics, personnel dispatch, energy import / export, automobile import It is the core company of the Venue 36 Group, which sells and manages restaurants.</p>
+						</div>
+					</div>
 			
 
 			<div class="container">
@@ -301,9 +452,9 @@
 			</div>
 			
 			<!-- youtube video -->
-			<div class="video-container container">
-				<iframe class="i-frame object embed" style="max-height: 550px;" src="https://www.youtube.com/embed/MckXq7H3cTA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
+			<!-- <div class="video-container container">
+				<iframe class="i-frame object embed" style="max-height: 550px;" src="https://www.youtube.com/embed/MckXq7H3cTA" title="YouTube video player" frameborder="0"  allowfullscreen></iframe>
+			</div> -->
 				
 				
 			<div class="container">

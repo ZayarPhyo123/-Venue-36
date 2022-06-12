@@ -1,7 +1,6 @@
 @extends('layouts.project')
 
 @section('content')
-
 		<!-- modal content -->
 		<div id="myModal" class="modal">
 			<span class="close">&times;</span>

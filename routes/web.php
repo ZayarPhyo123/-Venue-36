@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers;
+use App\Http\Controllers\NavController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,13 +18,17 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/memory',function(){
-    return view('memory');
-});
+Route::get('/contact', [NavController::class, 'contact']);
+Route::get('/memory', [NavController::class, 'memory']);
+Route::get('/element', [NavController::class, 'element']);
+Route::get('/about', [NavController::class, 'about']);
+
+
+
 
 Route::get('lang/{lang}',['as' => 'lang.switch','uses' => 'App\Http\Controllers\LanguageController@switchLang'] );
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // Route::get('languageDemo','App\Http\Controllers\HomeController@languageDemo');
